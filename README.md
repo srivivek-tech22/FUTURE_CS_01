@@ -1,19 +1,30 @@
-# FUTURE_CS_01
-
-## Task
-Vulnerability Assessment Report for a Live Website
+# Vulnerability Assessment Report
 
 ## Objective
-Identify common web vulnerabilities, classify risk levels, and provide remediation recommendations.
+Perform a vulnerability assessment on a test web application using Nmap and OWASP ZAP.
+
+## Target
+http://zero.webappsecurity.com
 
 ## Tools Used
 - Nmap
-- OWASP ZAP (Passive Scan)
-- Browser DevTools
-- Canva
+- OWASP ZAP
 
-## Deliverable
-A professional Vulnerability Assessment Report.
+## Nmap Findings
+- Port 80 (HTTP) Open
+- Port 443 (HTTPS) Open
+- Port 8080 Open
 
-## Status
-In Progress
+## OWASP ZAP Findings
+- Content Security Policy Header Not Set
+- Cross-Domain Misconfiguration
+- Missing Anti-clickjacking Header
+- Vulnerable JS Library
+- Information Leak
+- Missing X-Content-Type-Options Header
+
+## Screenshots
+See uploaded screenshots in this repository.
+
+## Conclusion
+The assessment identified several medium and low-risk security issues along with recommended remediation measures.
